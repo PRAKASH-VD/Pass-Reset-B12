@@ -68,7 +68,7 @@ export const forgotPassword = async (req, res) => {
       "Password Reset Link",
       `You are receiving this because you have requested the reset password for your account.
       Please click the following link or paste it into your browser to complete the process
-      https://passreset-f12.netlify.app/api/auth/reset-password/${user._id}/${token}
+      https://passreset-f12.netlify.app/reset-password/${user._id}/${token}
       please ignore you have not requested for reset password.`
     );
     res.status(200).json({ message: "Email sent successfully" });
